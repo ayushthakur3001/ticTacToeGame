@@ -1,0 +1,251 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #131A2B;
+}
+.head-div{
+  width: 30%;
+  height: 10%;
+  top: 4%;
+  position: absolute;
+  border: solid white 2px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #fff;
+      box-shadow: 0 0 5px #fff;
+  z-index: 3;
+      
+      
+}
+
+.app-header{
+  display:flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  background-color: #131A2B;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  
+}
+.heading-text{
+  color: white;
+  font-size: 42px;
+  position: absolute;
+  font-weight: bolder;
+  top: 3%;
+  text-align: center;
+  margin: 10px;
+  z-index: 3;
+  
+  
+}
+.squares{
+  top: 18%;
+  position: absolute;
+  z-index: 3;
+}
+.glow{
+  width: 32%;
+  bottom: 15.3%;
+
+  left: 34%;
+  height: 408px;
+  margin: 10% auto 0;
+  position: absolute;
+  background: linear-gradient(0deg, #131A2B ,rgb(44, 43, 43) );
+  
+  
+}
+.glow::before , .glow::after{
+  content: '';
+  position: absolute ;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg ,#e6fb04  , #ff6600,#00ff66, #00ffff, #ff00ff, #ff0099 , #6e0dd0, #ff3300, #099fff );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: 1;
+  animation: animate 20s linear infinite;
+}
+@keyframes animate{
+  0%{
+      background-position: 0 0;
+  }
+  50%{
+      background-position: 400% 0;
+  }
+  100%{
+      background-position: 0 0;
+  }
+}
+.glow::after{
+  filter: blur(20px);
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.column{
+  display: flex;
+  flex-direction: row;
+}
+.jc-center{
+  justify-content: center;
+}
+.square{
+  min-width: 135px;
+  min-height: 135px;
+  font-size: 44px;
+  text-align: center;
+  color: #1CDBF5;
+  font-weight: bolder;
+  padding: 30px;
+  cursor: pointer;
+  z-index: 3;
+  
+}
+
+.b-bottom-right{
+  border-right: 15px solid #1CDBF5;
+  border-radius: 5px;
+  border-bottom: 15px solid #1CDBF5;
+}
+
+.b-bottom{
+  border-bottom: 15px solid #1CDBF5;
+  border-radius: 5px;
+}
+.b-right{
+  border-right: 15px solid #1CDBF5;
+  border-radius: 5px;
+}
+.clear-button{
+  width: 100px;
+  margin: 40px auto 10px auto;
+  -webkit-box-shadow: 0 0 5px rgb(233, 25, 205);
+      box-shadow: 0 0 5px rgb(223, 21, 206);
+  font-weight: 900;
+  cursor: pointer;
+  transition: .7s;
+  animation: clear-button 3300ms infinite;
+  border-radius: 6px;
+  z-index: 3;
+
+  
+
+}
+.baseDiv{
+  bottom: 2%;
+  position: absolute;
+}
+p{
+  z-index: 3;
+}
+.clear-button:hover{
+  transform: scale(1.2);
+}
+@keyframes  clear-button{
+  0% {
+    background-color: #2ba805;
+    box-shadow: 0 0 3px #2ba805;
+  }
+  50% {
+    background-color: #49e819;
+    box-shadow: 0 0 10px #49e819;
+  }
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 3px #2ba805;
+  }
+}
+
+
+.fc-aqua {
+  color: #1CDBF5;
+}
+
+.fc-white {
+  color: white;
+}
+
+.fw-600 {
+  font-weight: bolder;
+}
+@media only screen and (max-width: 600px) {
+  .heading-text {
+      color: white;
+      font-size: 20px;
+      font-weight: bolder;
+      text-align: center;
+      top: 8%;
+      
+      
+  }
+  .glow{
+      width: 86%;
+      bottom: 22.5%;
+      left: 7%;
+      height: 242px;
+      margin: 10% auto 0;
+      position: absolute;
+      background: linear-gradient(0deg, #131A2B ,rgb(44, 43, 43) );
+      
+      
+  }
+
+  .square {
+      min-width: 80px;
+      min-height: 80px;
+      font-size: 32px;
+      font-weight: bolder;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .head-div{
+      width: 84%;
+      height: 10%;
+      top: 8%;
+      position: absolute;
+      border: solid white 2px;
+      border-radius: 5px;
+      -webkit-box-shadow: 0 0 5px #fff;
+          box-shadow: 0 0 5px #fff;
+      z-index: 3;
+
+  }
+  .squares{
+      top: 38%;
+      position: absolute;
+      z-index: 3;
+
+  }
+
+  .b-bottom-right {
+      border-right: 10px solid #1CDBF5;
+      border-bottom: 10px solid #1CDBF5;
+  }
+
+  .b-bottom {
+      border-bottom: 10px solid #1CDBF5;
+  }
+
+  .b-right {
+      border-right: 10px solid #1CDBF5;
+  }
+
+  .clear-button {
+      width: max-content;
+      margin: 40px auto 10px auto;
+  }
+}
