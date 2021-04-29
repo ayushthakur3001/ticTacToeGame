@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ticTacToeGame/static/css/main.3a94804c.chunk.css",
+    "main.js": "/ticTacToeGame/static/js/main.5cf39945.chunk.js",
+    "main.js.map": "/ticTacToeGame/static/js/main.5cf39945.chunk.js.map",
+    "runtime-main.js": "/ticTacToeGame/static/js/runtime-main.5ee6e5c6.js",
+    "runtime-main.js.map": "/ticTacToeGame/static/js/runtime-main.5ee6e5c6.js.map",
+    "static/js/2.0afa2098.chunk.js": "/ticTacToeGame/static/js/2.0afa2098.chunk.js",
+    "static/js/2.0afa2098.chunk.js.map": "/ticTacToeGame/static/js/2.0afa2098.chunk.js.map",
+    "index.html": "/ticTacToeGame/index.html",
+    "static/css/main.3a94804c.chunk.css.map": "/ticTacToeGame/static/css/main.3a94804c.chunk.css.map",
+    "static/js/2.0afa2098.chunk.js.LICENSE.txt": "/ticTacToeGame/static/js/2.0afa2098.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ee6e5c6.js",
+    "static/js/2.0afa2098.chunk.js",
+    "static/css/main.3a94804c.chunk.css",
+    "static/js/main.5cf39945.chunk.js"
+  ]
+}
