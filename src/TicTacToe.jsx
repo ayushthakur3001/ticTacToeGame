@@ -59,11 +59,13 @@ const TicTacToe = () => {
         <>
             <div className='app-header'>
                 <div className='head-div'>
-                </div>
                 <p className='heading-text'>Tic Tac Toe-React</p>
-                <div className='glow'></div>
+                </div>
                 
+                
+                <div className='glow'>
                 <div className='squares'>
+                
                 
                 
                 <div className='row jc-center'>
@@ -82,6 +84,7 @@ const TicTacToe = () => {
                     <TicTacToeSquare state={gameState[8]} onClick={() => onSquareClicked(8)} />
                 </div>
                 
+                </div>
                 </div>
                 <div className="baseDiv">
                 <button className='clear-button' onClick={() =>updateGameState(initialState)}>Clear Game</button>

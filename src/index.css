@@ -22,7 +22,17 @@
       
       
 }
-
+.head-div p{
+  color: white;
+  font-size: 42px;
+  position: absolute;
+  font-weight: bolder;
+  top: 3%;
+  text-align: center;
+  margin: 10px;
+  z-index: 3;
+  
+}
 .app-header{
   display:flex;
   min-height: 100vh;
@@ -34,18 +44,7 @@
   align-items: center;
   
 }
-.heading-text{
-  color: white;
-  font-size: 42px;
-  position: absolute;
-  font-weight: bolder;
-  top: 3%;
-  text-align: center;
-  margin: 10px;
-  z-index: 3;
-  
-  
-}
+
 .squares{
   top: 18%;
   position: absolute;
@@ -181,26 +180,29 @@ p{
   font-weight: bolder;
 }
 @media only screen and (max-width: 600px) {
-  .heading-text {
-      color: white;
-      font-size: 20px;
-      font-weight: bolder;
-      text-align: center;
-      top: 8%;
-      
-      
+  
+  .head-div p{
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+    z-index: 3;
+    
   }
+  
   .glow{
-      width: 86%;
-      bottom: 22.5%;
-      left: 7%;
-      height: 242px;
-      margin: 10% auto 0;
-      position: absolute;
-      background: linear-gradient(0deg, #131A2B ,rgb(44, 43, 43) );
-      
-      
-  }
+    width: 245px;
+    position: fixed;
+    top: 32.1%;
+    right: 16%;
+    bottom: 32.1%;
+    left: 16%;
+    height: 244px;
+    background: linear-gradient(0deg, #131A2B ,rgb(44, 43, 43) );
+    
+    
+}
+  
 
   .square {
       min-width: 80px;
@@ -222,10 +224,14 @@ p{
       -webkit-box-shadow: 0 0 5px #fff;
           box-shadow: 0 0 5px #fff;
       z-index: 3;
+      display: flex;
+    justify-content: center;
+    align-items: center;
 
   }
   .squares{
-      top: 38%;
+      top: 1%;
+      left: 1.2%;
       position: absolute;
       z-index: 3;
 
