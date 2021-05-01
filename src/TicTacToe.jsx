@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import TicTacToeSquare from './TicTacToeSquare';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const initialState = ["", "", "", "", "", "", "", "", ""];
-
+const draw = 0;
 
 const TicTacToe = () => {
+
+    
+    
 
     const [gameState, updateGameState] = useState(initialState);
     const [isXChance, updateIsXChance] = useState(false);
@@ -25,12 +30,19 @@ const TicTacToe = () => {
         if(winner){
 
             updateGameState(initialState);
-            alert(`🔥🔥🔥🔥The Winner is 🔥🔥🔥🔥 ${winner}`)
-            
-         
+            if(winner == '0'){
+                toast("🔥🔥🔥🔥The Winner is 0 🔥🔥🔥🔥 ")
+                
+
+            }
+            else if( winner == 'X'){
+                toast("🔥🔥🔥🔥The Winner is X  🔥🔥🔥🔥 ")
+
+            }
+        
         }
         
-
+  
     }, [gameState])
 
     const checkWinner = () =>{
@@ -51,6 +63,7 @@ const TicTacToe = () => {
                 return gameState[a];
             }
         }
+        
         return null;
 
 
@@ -93,6 +106,8 @@ const TicTacToe = () => {
                 <button className='clear-button' onClick={() =>updateGameState(initialState)}>Clear Game</button>
                 <p className='fc-aqua fw-600'>Ayush Thakur</p>
                 </div>
+
+                <ToastContainer />
                 
                 
                 
