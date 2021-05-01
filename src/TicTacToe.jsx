@@ -5,7 +5,23 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const initialState = ["", "", "", "", "", "", "", "", ""];
-const draw = 0;
+
+const ToastX = () =>{
+    return (
+        <div className='toasted'>
+        🔥🔥🔥🔥The Winner is X 🔥🔥🔥🔥
+        </div>
+    )
+}
+
+const Toast0 = () =>{
+    return (
+        <div className='toasted'>
+        🔥🔥🔥🔥The Winner is 0 🔥🔥🔥🔥
+        </div>
+    )
+}
+
 
 const TicTacToe = () => {
 
@@ -31,12 +47,10 @@ const TicTacToe = () => {
 
             updateGameState(initialState);
             if(winner == '0'){
-                toast("🔥🔥🔥🔥The Winner is 0 🔥🔥🔥🔥 ")
-                
-
+                toast.success(<Toast0/>)
             }
             else if( winner == 'X'){
-                toast("🔥🔥🔥🔥The Winner is X  🔥🔥🔥🔥 ")
+                toast.success(<ToastX/>)
 
             }
         
