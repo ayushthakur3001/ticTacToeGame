@@ -23,11 +23,13 @@ const TicTacToe = () => {
     useEffect(() =>{
         const winner = checkWinner();
         if(winner){
-            
-            alert(`🔥🔥🔥🔥The Winner is 🔥🔥🔥🔥 ${winner}`)
+
             updateGameState(initialState);
+            alert(`🔥🔥🔥🔥The Winner is 🔥🔥🔥🔥 ${winner}`)
+            
          
         }
+        
 
     }, [gameState])
 
@@ -42,6 +44,7 @@ const TicTacToe = () => {
             [0, 4, 8],
             [2, 4, 6],
         ];
+        console.log('Class: App, Function: checkWinner ==', gameState[0], gameState[1], gameState[2]);
         for (let i = 0; i < lines.length; i++) {
             const [a, b, c] = lines[i];
             if (gameState[a] && gameState[a] === gameState[b] && gameState[a] === gameState[c]) {

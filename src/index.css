@@ -24,10 +24,14 @@
 }
 .head-div p{
   color: white;
-  font-size: 42px;
+  font-size: 22px;
   position: absolute;
   font-weight: bolder;
-  top: 3%;
+  top: 1%;
+  left: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin: 10px;
   z-index: 3;
@@ -46,7 +50,8 @@
 }
 
 .squares{
-  top: 18%;
+  top: 0.5%;
+  left: 0.7%;
   position: absolute;
   z-index: 3;
 }
@@ -129,7 +134,7 @@
 }
 .clear-button{
   width: 100px;
-  margin: 40px auto 10px auto;
+  
   -webkit-box-shadow: 0 0 5px rgb(233, 25, 205);
       box-shadow: 0 0 5px rgb(223, 21, 206);
   font-weight: 900;
